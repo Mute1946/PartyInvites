@@ -27,21 +27,21 @@ namespace PartyInvites.Controllers
         [HttpPost]
         public ViewResult RsvpForm(GuestResponse guestResponse)
         {
-            /*if (ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 Repository.AddResponse(guestResponse);
                 return View("Thanks", guestResponse);
             }
-            else*/
+            else
             {
                 // there is a validation error
                 return View();
             }
         }
-        /*
+        
         public ViewResult ListResponses()
         {
             return View(Repository.Responses.Where(r => r.WillAttend == true));
-        }*/
+        }
     }
 }
